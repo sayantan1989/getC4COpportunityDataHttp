@@ -1,5 +1,5 @@
 const ObjectID = '00163E02944F1ED1A6E2136ED48DFB4D';
-const SystemUrl = 'qwa-cust214.dev.sapbydesign.com';
+const SystemUrl = '';
 
 var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 var data = null;
@@ -46,7 +46,7 @@ console.log(url);
 xhr.open("get", url );
 
 //API endpoint with optional query parameters
-//xhr.open("get", "https://qwa-cust214.dev.sapbydesign.com/sap/c4c/odata/v1/c4codataapi/OpportunityCollection('{ObjectID}')?$select=array&$expand=array");
+//xhr.open("get", "https://<SystemUrl>/sap/c4c/odata/v1/c4codataapi/OpportunityCollection('{ObjectID}')?$select=array&$expand=array");
 
 //Available API Endpoints
 //https://{domain}/sap/c4c/odata/v1/c4codataapi
@@ -58,8 +58,8 @@ xhr.setRequestHeader("Accept", "application/json");
 //Available Security Schemes for productive API Endpoints
 //Basic Authentication
 //Basic Auth : provide username:password in Base64 encoded in Authorization header
-//DESALESOPS:Welcome1 Base64 encoding :  REVTQUxFU09QUzpXZWxjb21lMQ==
-xhr.setRequestHeader("Authorization", "Basic REVTQUxFU09QUzpXZWxjb21lMQ==");
+//DESALESOPS:Welcome1 Base64 encoding :  ==
+xhr.setRequestHeader("Authorization", "Basic ");
 
 //sending request
 xhr.send(data);
